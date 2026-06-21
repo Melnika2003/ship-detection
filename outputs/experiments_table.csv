@@ -1,0 +1,6 @@
+experiment,experiment_id,architecture,training_time_sec,mAP50,mAP50_95,precision,recall,fp,fn,tp,latency_ms,weights_mb,model_type,eval_split,gpu_mem_mb
+FasterRCNN_R50_FPN,E4,Faster R-CNN ResNet50-FPN,4017.1,0.4659,0.6748,0.794,0.5867,2914,7914,11234.0,54.02,158.03,torchvision,,
+RetinaNet_R50_FPN,E5,RetinaNet ResNet50-FPN,6555.9,0.451,0.6451,0.8935,0.5048,1152,9483,9665.0,48.06,123.2,torchvision,,
+RT-DETR-L,E3,RT-DETR-L,6777.6,0.8139,0.5649,0.878,0.7851,2910,0,,29.44,63.2,ultralytics,val,292.3
+YOLO11m_main,E2,YOLO11m,3180.7,0.9037,0.6658,0.9263,0.8787,1669,0,,16.31,38.67,ultralytics,val,410.8
+YOLOv8n_baseline,E1,YOLOv8n,1205.9,0.8835,0.5983,0.9218,0.8392,1654,0,,6.0,5.98,ultralytics,val,52.6

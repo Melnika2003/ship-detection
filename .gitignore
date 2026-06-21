@@ -1,0 +1,125 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# --- Virtual environments ---
+.venv/
+venv/
+env/
+
+# --- Environment & secrets ---
+.env
+.env.*
+!.env.example
+
+# --- Data (large, download locally) ---
+data/raw/*
+!data/raw/README.md
+data/processed/*
+!data/processed/.gitkeep
+*.npy
+
+# --- Model weights & checkpoints ---
+*.pt
+*.pth
+*.onnx
+*.engine
+*.weights
+models/best/weights.pt
+outputs/experiments/**/weights/
+
+# Production weights (committed, like DroneDetect)
+!weights/
+!weights/best.pt
+!weights/README.md
+
+# Keep deploy metadata (no weights)
+!models/best/metadata.json
+!models/best/classes.json
+!models/best/config.yaml
+!models/best/README.md
+!models/model_info.yaml
+
+# --- Training artifacts ---
+runs/
+wandb/
+mlruns/
+outputs/*
+!outputs/README.md
+!outputs/experiments_table.csv
+!outputs/eda_bbox_distribution.png
+!outputs/experiments_comparison.png
+
+# --- Archives ---
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# --- Logs & temp ---
+*.log
+*.tmp
+*.temp
+.cache/
+
+# --- Database (runtime) ---
+*.db
+*.sqlite
+*.sqlite3
+service/db/*
+!service/db/.gitkeep
+
+# --- IDE ---
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Office / local reports (not for repo) ---
+*.docx
+*.doc
+.~lock.*
+~$*
+
+# --- Local drafts (not for repo) ---
+скришоты ui/
+результат тестов .txt
+
+# Demo GIF committed in gif/recording.gif
+
+# --- Docker ---
+.docker/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+*.ipynb
+
+# --- Windows scripts (local only) ---
+*.ps1
+*.bat
+*.cmd
+
+# --- Node (if any) ---
+node_modules/

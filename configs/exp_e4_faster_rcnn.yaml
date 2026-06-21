@@ -1,0 +1,6 @@
+experiment_id: E4
+name: FasterRCNN_R50_FPN
+model: faster_rcnn
+architecture: Faster R-CNN ResNet50-FPN
+family: two-stage
+pretrained: COCO

@@ -1,0 +1,36 @@
+# Virtual envs
+venv/
+.venv/
+
+# Large data (mounted separately if needed)
+data/raw/
+data/processed/
+
+# Weights mounted at runtime via docker-compose volume
+models/**/*.pt
+models/**/*.pth
+
+# Build artifacts
+outputs/
+runs/
+wandb/
+mlruns/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.idea/
+.vscode/
+
+# Archives
+*.zip
+*.tar.gz
+
+# Git & docs
+.git/
+.github/
+.gitignore
+GITHUB.md
+отчет.md
+docs/
+скришоты ui/
+*.docx

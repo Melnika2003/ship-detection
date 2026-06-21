@@ -1,0 +1,11 @@
+weights_path: weights/best.pt
+architecture: YOLO11m
+device: "0"
+conf: 0.25
+iou: 0.5
+imgsz: 1024
+patch_size: 1024
+overlap: 200
+use_tiling: true
+classes:
+  - ship

@@ -1,0 +1,6 @@
+experiment_id: E2
+name: YOLO11m_main
+model: yolo11m.pt
+architecture: YOLO11m
+family: one-stage
+pretrained: COCO

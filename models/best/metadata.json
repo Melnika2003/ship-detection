@@ -1,0 +1,9 @@
+{
+  "version": "1.0.0",
+  "architecture": "YOLO11m",
+  "dataset": "DOTA v1 (ship, patches 1024/overlap 200)",
+  "trained_at": "2026-06-21",
+  "mAP50": 0.9037,
+  "mAP50_95": 0.6658,
+  "note": "Weights: weights/best.pt (also models/best/weights.pt locally)"
+}

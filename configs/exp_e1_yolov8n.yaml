@@ -1,0 +1,6 @@
+experiment_id: E1
+name: YOLOv8n_baseline
+model: yolov8n.pt
+architecture: YOLOv8n
+family: one-stage
+pretrained: COCO

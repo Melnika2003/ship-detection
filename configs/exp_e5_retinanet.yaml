@@ -1,0 +1,6 @@
+experiment_id: E5
+name: RetinaNet_R50_FPN
+model: retinanet
+architecture: RetinaNet ResNet50-FPN
+family: one-stage-anchor
+pretrained: COCO

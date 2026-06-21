@@ -1,0 +1,10 @@
+model: yolo11m.pt
+architecture: YOLO11m
+imgsz: 1024
+conf: 0.25
+iou: 0.5
+patch_size: 1024
+overlap: 200
+use_tiling: true
+classes:
+  - ship

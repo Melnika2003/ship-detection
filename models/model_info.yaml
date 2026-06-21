@@ -1,0 +1,15 @@
+version: "1.0.0"
+architecture: YOLO11m
+dataset: "DOTA v1 (ship, patches 1024/overlap 200)"
+trained_at: "2026-06-21"
+experiment_id: E2
+mAP50: 0.9037
+mAP50_95: 0.6658
+precision: 0.9263
+recall: 0.8787
+latency_ms: 16.31
+weights_mb: 38.67
+classes:
+  - ship
+weights_path: weights/best.pt
+pretrained: COCO

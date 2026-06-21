@@ -1,0 +1,6 @@
+experiment_id: E3
+name: RT-DETR-L
+model: rtdetr-l.pt
+architecture: RT-DETR-L
+family: transformer
+pretrained: COCO

@@ -1,0 +1,34 @@
+services:
+  ship-detector:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./weights:/app/weights:ro
+      - ./service/db:/app/service/db
+      - ./data/samples:/app/data/samples:ro
+    environment:
+      - MODEL_WEIGHTS=/app/weights/best.pt
+      - DB_PATH=/app/service/db/runs.db
+      - VIDEO_MAX_FRAMES=0
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health')"]
+      interval: 15s
+      timeout: 10s
+      retries: 5
+      start_period: 60s
+    restart: unless-stopped
+
+  ui:
+    build: .
+    command: python service/ui/app.py
+    ports:
+      - "7860:7860"
+    environment:
+      - API_URL=http://ship-detector:8000
+      - GRADIO_SERVER_NAME=0.0.0.0
+      - GRADIO_PORT=7860
+    depends_on:
+      ship-detector:
+        condition: service_healthy
+    restart: unless-stopped
