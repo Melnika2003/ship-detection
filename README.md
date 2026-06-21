@@ -125,8 +125,6 @@ python scripts/run_analysis.py
 | E4 | Faster R-CNN | 0.466 |
 | E5 | RetinaNet | 0.451 |
 
-Подробный отчёт: [`отчет.md`](отчет.md). Публикация на GitHub: [`GITHUB.md`](GITHUB.md).
-
 ## Демонстрация
 
 ![demo](gif/recording.gif)
