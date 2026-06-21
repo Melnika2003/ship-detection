@@ -84,6 +84,8 @@ outputs/*
 *.sqlite3
 service/db/*
 !service/db/.gitkeep
+!service/db/__init__.py
+!service/db/database.py
 
 # --- IDE ---
 .idea/
